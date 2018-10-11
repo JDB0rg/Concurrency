@@ -80,13 +80,12 @@ var dev4 = Developer(devName: 4, leftSpoon: spoon4, rightSpoon: spoon5)
 var dev5 = Developer(devName: 5, leftSpoon: spoon5, rightSpoon: spoon1)
 
 let developers = [dev1, dev2, dev3, dev4, dev5]
-var count = 0
 
-DispatchQueue.concurrentPerform(iterations: 5) {_ in
-    for developer in developers {
+for developer in developers {
+    DispatchQueue.global().async {
         developer.run()
-        count += 1
-        print(count)
     }
 }
+
+dispatchMain()
 //: [Next](@next)
