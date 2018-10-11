@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Swapsies'/>
+        <page name='Queue'/>
+        <page name='Constrained Generics'/>
+        <page name='Duplicates'/>
+        <page name='Counted Set'/>
+    </pages>
+</playground>
